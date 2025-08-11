@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shifa — Computer Science Student</title>
+
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- thin purple bar -->
+  <div class="top-rule"></div>
+
+  <!-- Sticky header -->
+  <header>
+    <div class="nav-wrap">
+      <nav aria-label="primary">
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#classes">Classes</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Past Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="burger" aria-label="Open menu" aria-expanded="false">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </div><!-- /nav-wrap -->
+  </header>
+
+  <main>
+    <!-- Intro row -->
+    <section class="hero" aria-label="intro">
+      <div class="avatar">
+        <img src="assets/portrait.jpg" alt="Portrait" onerror="this.src='assets/placeholder.png'"/>
+      </div>
+
+      <div class="about">
+        <h1>I'm Shifa, a<br>Computer Science Student</h1>
+        <p class="subtitle">University of California, Davis (2023–2026)</p>
+
+        <h3>A Bit About Me</h3>
+        <p>Undergraduate Computer Science student with strong academic performance and hands-on experience in software engineering, data science, machine learning, and computer architecture.</p>
+        <p>Proficient in object-oriented programming, algorithm design, complexity analysis, and mathematical foundations. Demonstrated ability to work both independently and in cross-functional teams, with a focus on delivering results.</p>
+        <p>Recognized for strong communication, leadership in student organizations, and a commitment to innovation.</p>
+      </div>
+    </section>
+
+    <!-- centered circle menu (all different colors) -->
+   <!-- quick nav tiles (replaces bubbles) -->
+<div class="cta-grid">
+  <a class="cta c1" href="#resume">Resume</a>
+  <a class="cta c2" href="#projects">Projects</a>
+  <a class="cta c3" href="#research">Research</a>
+  <a class="cta c4" href="#classes">Classes</a>
+  <a class="cta c5" href="#skills">Skills</a>
+  <a class="cta c6" href="#experience">Experience</a>
+</div>
+
+
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research Highlights</h2>
+      <div class="rect-slider auto-slider" data-dots="true">
+        <article class="rect-card">
+          <img src="assets/VR.jpg" alt="Drone System Simulation" />
+          <div class="rect-info">
+            <h3>Drone System with 3D Simulation and XR Integration</h3>
+            <p>Developing an embedded quadcopter system with SLAM navigation in GPS-denied environments, linked to Unity XR simulations for real-time collision testing.</p>
+          </div>
+        </article>
+
+        <article class="rect-card">
+          <img src="assets/bert.jpg" alt="NLP Environmental Governance" />
+          <div class="rect-info">
+            <h3>AI and NLP for Environmental Governance</h3>
+            <p>Built an NLP pipeline to extract and classify environmental discourse from government policy documents, leveraging transformer-based models for theme analysis.</p>
+          </div>
+        </article>
+      </div>
+      <div class="slider-dots"></div>
+    </section>
+
+    <!-- PAST EXPERIENCE -->
+    <section id="experience">
+      <h2>Past Experience</h2>
+      <div class="slider auto-slider" data-dots="true">
+        <article class="rect-card rect-card--text">
+          <div class="rect-info">
+            <h3>“SpeakProse” QA & Data Analyst Intern — Cognixition Inc., San Leandro, CA</h3>
+            <p class="meta">Jun 2023 – Sep 2023</p>
+            <ul class="tight">
+              <li>Improved assistive speech app by finding edge-case bugs, refining test protocols, and suggesting UX/UI changes for accessibility and engagement.</li>
+              <li>Partnered with engineering to analyze interaction data; implemented changes that boosted reliability by ~18%.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rect-card rect-card--text">
+          <div class="rect-info">
+            <h3>Data Science Intern — PilotCity Inc., San Leandro, CA</h3>
+            <p class="meta">Jun 2022 – Sep 2022</p>
+            <ul class="tight">
+              <li>Supported an educational data-tracking app via exploratory analysis of student activity and survey data.</li>
+              <li>Performed QA across mobile platforms and collaborated on feature improvements informed by user testing.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rect-card rect-card--text">
+          <div class="rect-info">
+            <h3>Student Assistant — Computer Architecture, UC Davis</h3>
+            <p class="meta">Jun 2025 – Present</p>
+            <ul class="tight">
+              <li>Tutored students and supported projects involving FSMs, datapaths, cache, and CPU implementation in Logisim.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="slider-dots"></div>
+    </section>
+
+
+ <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="slider auto-slider" data-dots="true">
+        <article class="rect-card">
+          <div class="rect-info">
+            <h3><span class="skill-icon">💻</span> Programming Languages</h3>
+            <p>C, C++, Python, Java, JavaScript, R, Swift, Bash, Assembly (x86), SQL</p>
+          </div>
+        </article>
+
+        <article class="rect-card">
+          <div class="rect-info">
+            <h3><span class="skill-icon">🌐</span> Systems & Networking</h3>
+            <p>BGP, TCP, UNIX, Serial Communication, GDB, Logisim</p>
+          </div>
+        </article>
+
+        <article class="rect-card">
+          <div class="rect-info">
+            <h3><span class="skill-icon">🛰️</span> Embedded & Robotics</h3>
+            <p>MAVLink, Jetson Nano (NVIDIA), RealSense T265 (Intel), ROS, Pixhawk (ArduPilot)</p>
+          </div>
+        </article>
+
+        <article class="rect-card">
+          <div class="rect-info">
+            <h3><span class="skill-icon">🧠</span> ML & AI</h3>
+            <p>PyTorch, TensorFlow, Scikit-learn, Transformers, Cross-Validation, Model Deployment (Flask)</p>
+          </div>
+        </article>
+
+        <article class="rect-card">
+          <div class="rect-info">
+            <h3><span class="skill-icon">📊</span> Data Science & NLP</h3>
+            <p>Text Preprocessing, PDF Extraction (R), NLP Classification, Statistics, Pandas, NumPy, Matplotlib</p>
+          </div>
+        </article>
+
+        <article class="rect-card">
+          <div class="rect-info">
+            <h3><span class="skill-icon">🛠️</span> Tools & Platforms</h3>
+            <p>GitHub, Google Colab, Unity XR, Unity 3D, Xcode, Figma, VSCode, HTML, CSS</p>
+          </div>
+        </article>
+      </div>
+      <div class="slider-dots"></div>
+    </section>
+
+  
+  
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="rect-slider auto-slider" data-dots="true">
+        <article class="rect-card">
+          <img src="assets/ecs132_pic.jpg" alt="Covert Timing Channel Simulation" />
+
+          <div class="rect-info">
+            <h3>Secure Communications via Covert Timing Channel Simulation</h3>
+            <p class="meta">Programmer · Winter 2025</p>
+            <p>Simulated packet transmission and buffer dynamics in Python to analyze covert data leakage rates under varying network loads.</p>
+          </div>
+        </article>
+
+        <article class="rect-card">
+          <div class="rect-info">
+            <h3>Register-Level CPU Simulation and Cache Design</h3>
+            <p class="meta">Programmer · Spring 2025</p>
+            <p>Designed and tested a custom CPU and cache system in Logisim, optimizing circuits to reduce execution cycles for arithmetic operations.</p>
+          </div>
+        </article>
+
+        <article class="rect-card">
+          <img src="assets/ML_pic.jpg" alt="Student Success Prediction Webapp Screenshot" />
+          <div class="rect-info">
+            <h3>Student Success Prediction Webapp</h3>
+            <p class="meta">ML Programmer/Designer · Spring 2025</p>
+            <p>A predictive web application that analyzes lifestyle patterns to forecast student performance. Integrated interactive UI, multiple ML models, and real-time results visualization.</p>
+          </div>
+        </article>
+      </div>
+      <div class="slider-dots"></div>
+    </section>
+
+
+    <!-- CLASSES -->
+    <section id="classes">
+      <h2>Classes</h2>
+      <div class="slider auto-slider classes-slider" data-dots="true">
+        <article class="rect-card rect-card--text classes-card">
+          <div class="rect-info">
+            <h3>Algorithms & DS</h3>
+            <p>Data Structures, Design & Algorithms, Theory of Computation.</p>
+          </div>
+        </article>
+
+        <article class="rect-card rect-card--text classes-card">
+          <div class="rect-info">
+            <h3>ML & Probability</h3>
+            <p>Machine Learning (ML), Probability & Statistics.</p>
+          </div>
+        </article>
+
+        <article class="rect-card rect-card--text classes-card">
+          <div class="rect-info">
+            <h3>Systems & Architecture</h3>
+            <p>Computer Architecture, Operating Systems.</p>
+          </div>
+        </article>
+
+        <article class="rect-card rect-card--text classes-card">
+          <div class="rect-info">
+            <h3>Mathematics</h3>
+            <p>Discrete Math, Calculus I–III, Linear Algebra.</p>
+          </div>
+        </article>
+      </div>
+      <div class="slider-dots"></div>
+
+    </section>
+
+   
+
+    <!-- LEADERSHIP & ACTIVITIES -->
+    <section id="leadership">
+      <h2>Leadership & Activities</h2>
+      <div class="slider auto-slider" data-dots="true">
+        <article class="rect-card rect-card--text">
+          <div class="rect-info">
+            <h3>Swift iOS Coding Club</h3>
+            <p class="meta">VP of Marketing / Tech Director / Treasurer · May 2025 – Present</p>
+            <ul class="tight">
+              <li>Mentored members in Xcode</li>
+              <li>Built onboarding guides, boosting online engagement.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rect-card rect-card--text">
+          <div class="rect-info">
+            <h3>Machine Learning Student Network Club</h3>
+            <p class="meta">Marketing Director · May 2025 – Present</p>
+            <ul class="tight">
+              <li>Designed and maintained digital assets for ML workshops.</li>
+              <li>Launched outreach that reached 1,000+ students and increased attendance</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rect-card rect-card--text">
+          <div class="rect-info">
+            <h3>Student Assistant — Computer Architecture, UC Davis</h3>
+            <p class="meta">Jun 2025 – Present</p>
+            <ul class="tight">
+              <li>Tutored peers and supported architecture labs (FSMs, datapaths, cache & CPU in Logisim).</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="slider-dots"></div>
+    </section>
+
+    
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="card">
+        <p> <a href="assets/resume.pdf" target="_blank">
+    Link to my Resume_2025
+  </a>.</p>
+      </div>
+    </section>
+  
+  </main>
+
+  
+  <!-- Footer (Contact) -->
+<footer class="foot" id="contact">
+  <div class="foot-row">
+    <a>  Contact: 
+    </a>
+    <a href="mailto:sfazalur@ucdavis.edu">
+      <img src="assets/icons/email.svg" alt="Email" class="icon"> sfazalur@ucdavis.edu
+    </a>
+    <a href="https://www.linkedin.com/in/shifanaaz-fazalur/" target="_blank" rel="noopener noreferrer">
+      <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="icon"> LinkedIn
+    </a>
+    <a href="https://github.com/ShifanaazFazalur" target="_blank" rel="noopener noreferrer">
+      <img src="assets/icons/github.svg" alt="GitHub" class="icon"> GitHub
+    </a>
+    <a href="https://leetcode.com/u/sfazalur/" target="_blank" rel="noopener noreferrer">
+      <img src="assets/icons/leetcode.svg" alt="LeetCode" class="icon"> LeetCode
+    </a>
+  </div>
+</footer>
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
