@@ -302,8 +302,8 @@
       <h2>Resume</h2>
       <div class="card">
         <p> <a href="assets/resume.pdf" target="_blank">
-    Link to my Resume_2025
-  </a>.</p>
+    View Résumé (PDF)
+  </a></p>
       </div>
     </section>
   
@@ -311,24 +311,33 @@
 
   
   <!-- Footer (Contact) -->
-<footer class="foot" id="contact">
-  <div class="foot-row">
-    <a>  Contact: 
-    </a>
-    <a href="mailto:sfazalur@ucdavis.edu">
-      <img src="assets/icons/email.svg" alt="Email" class="icon"> sfazalur@ucdavis.edu
-    </a>
-    <a href="https://www.linkedin.com/in/shifanaaz-fazalur/" target="_blank" rel="noopener noreferrer">
-      <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="icon"> LinkedIn
-    </a>
-    <a href="https://github.com/ShifanaazFazalur" target="_blank" rel="noopener noreferrer">
-      <img src="assets/icons/github.svg" alt="GitHub" class="icon"> GitHub
-    </a>
-    <a href="https://leetcode.com/u/sfazalur/" target="_blank" rel="noopener noreferrer">
-      <img src="assets/icons/leetcode.svg" alt="LeetCode" class="icon"> LeetCode
-    </a>
+<footer class="site-footer" id="contact" aria-labelledby="contact-heading">
+  <div class="footer-inner">
+    <h2 id="contact-heading" class="footer-title">Contact</h2>
+
+    <nav class="footer-links" aria-label="Contact links">
+      <a class="f-link" href="mailto:sfazalur@ucdavis.edu">
+        <img src="assets/icons/email.png" alt="" class="f-icon"> sfazalur@ucdavis.edu
+      </a>
+      <a class="f-link" href="https://www.linkedin.com/in/shifanaaz-fazalur/" target="_blank" rel="noopener">
+        <img src="assets/icons/linkedin.svg" alt="" class="f-icon"> LinkedIn
+      </a>
+      <a class="f-link" href="https://github.com/ShifanaazFazalur" target="_blank" rel="noopener">
+        <img src="assets/icons/github.png" alt="" class="f-icon"> GitHub
+      </a>
+      <a class="f-link" href="https://leetcode.com/u/sfazalur/" target="_blank" rel="noopener">
+        <img src="assets/icons/leetcode.png" alt="" class="f-icon"> LeetCode
+      </a>
+    </nav>
+
+    <p class="footer-copy">© <span id="year"></span> Shifa </p>
   </div>
 </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 
 
   <!-- JS -->
