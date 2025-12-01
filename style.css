@@ -60,9 +60,10 @@ header{
 nav{margin-left:auto; display:flex; gap:22px}
 nav a{color:#f0f3f9; text-decoration:none; font-weight:800; opacity:.95}
 nav a:hover{color:var(--accent)}
-.burger{display:none;background:none;border:0;padding:6px}
+.burger{display:none;background:none;border:0;padding:6px;color:#f0f3f9}
 @media (max-width:760px){
-  nav{display:none} .burger{display:block}
+  nav{display:none}
+  .burger{display:block}
   .nav-mobile{display:none;border-top:1px solid var(--rule);background:rgba(15,18,30,.9)}
   .nav-mobile a{display:block;padding:14px 20px;text-decoration:none;color:var(--text);font-weight:700}
   .nav-mobile a+a{border-top:1px solid var(--rule)}
@@ -81,6 +82,8 @@ h2,h3,h4,h5,h6{color:#fff}
 .about h3{margin:22px 0 8px;font-size:18px;text-transform:uppercase;letter-spacing:.06em}
 .about p{color:#d4dae6;line-height:1.65;margin:8px 0}
 p,li{color:var(--text)}
+ul.tight{margin:8px 0 0 1.1rem; padding:0}
+ul.tight li{margin-bottom:4px}
 
 /* sections as subtle panels */
 section{

@@ -21,11 +21,11 @@
     <div class="nav-wrap">
       <nav aria-label="primary">
         <a href="#resume">Resume</a>
-        <a href="#projects">Projects</a>
         <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
         <a href="#classes">Classes</a>
         <a href="#skills">Skills</a>
-        <a href="#experience">Past Experience</a>
+        <a href="#experience">Work Experience</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -49,176 +49,265 @@
 
       <div class="about">
         <h1>I'm Shifa, a<br>Computer Science Student</h1>
-        <p class="subtitle">University of California, Davis (2023–2026)</p>
+        <p class="subtitle">
+          B.S. Computer Science, UC Davis — GPA 3.82/4.00<br>
+          Expected Graduation: June 2026
+        </p>
 
         <h3>A Bit About Me</h3>
-        <p>Undergraduate Computer Science student with strong academic performance and hands-on experience in software engineering, data science, machine learning, and computer architecture.</p>
-        <p>Proficient in object-oriented programming, algorithm design, complexity analysis, and mathematical foundations. Demonstrated ability to work both independently and in cross-functional teams, with a focus on delivering results.</p>
-        <p>Recognized for strong communication, leadership in student organizations, and a commitment to innovation.</p>
+        <p>
+          I’m an undergraduate Computer Science student at the University of California, Davis
+          focusing on AI, robotics perception, and real-world sensing systems.
+        </p>
+        <p>
+          My interests span visual-inertial SLAM, computer vision, deep learning, AR/VR sensing,
+          and distributed robotic systems — especially for environmental monitoring and conservation.
+        </p>
+        <p>
+          I enjoy working at the intersection of research and engineering: building systems
+          that not only work in theory, but also deploy in real time on robots, embedded hardware,
+          and network systems.
+        </p>
       </div>
     </section>
 
-    <!-- centered circle menu (all different colors) -->
-   <!-- quick nav tiles (replaces bubbles) -->
-<div class="cta-grid">
-  <a class="cta c1" href="#resume">Resume</a>
-  <a class="cta c2" href="#projects">Projects</a>
-  <a class="cta c3" href="#research">Research</a>
-  <a class="cta c4" href="#classes">Classes</a>
-  <a class="cta c5" href="#skills">Skills</a>
-  <a class="cta c6" href="#experience">Experience</a>
-</div>
+    <!-- quick nav tiles -->
+    <!-- <div class="cta-grid">
+      <a class="cta c1" href="#research">Research</a>
+      <a class="cta c2" href="#projects">Projects</a>
+      <a class="cta c3" href="#education">Education</a>
+      <a class="cta c4" href="#classes">Classes</a>
+      <a class="cta c5" href="#skills">Skills</a>
+      <a class="cta c6" href="#experience">Work Experience</a>
+    </div> -->
 
+    <!-- EDUCATION + RESEARCH INTERESTS -->
+    <section id="education">
+      <h2>Education & Research Interests</h2>
+      <div class="rect-slider">
+        <article class="rect-card rect-card--text">
+          <div class="rect-info">
+            <h3>University of California, Davis</h3>
+            <p class="meta">B.S. in Computer Science · June 2026 (Expected)</p>
+            <ul class="tight">
+              <li>GPA: 3.82/4.00, College of Engineering.</li>
+              <li>Core areas: algorithms & data structures, theory of computation, systems, architecture, and machine learning.</li>
+              <li>Dean’s Honor List — Spring 2024, Fall 2024, Winter 2025 (top 16% in the College of Engineering).</li>
+            </ul>
+          </div>
+        </article>
 
+        <article class="rect-card rect-card--text">
+          <div class="rect-info">
+            <h3>Research Interests</h3>
+            <p>
+              AI and robotics for environmental monitoring and conservation, robotics perception,
+              visual-inertial SLAM, and computer vision for real-world sensing.
+            </p>
+            <p>
+              I’m also interested in AR/VR sensing and spatial computing, robotics systems and real-time control,
+              computer networking, and wireless communication for distributed sensing and multi-robot coordination.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <!-- RESEARCH -->
     <section id="research">
       <h2>Research Highlights</h2>
       <div class="rect-slider auto-slider" data-dots="true">
         <article class="rect-card">
-          <img src="assets/VR.jpg" alt="Drone System Simulation" />
+          <img src="assets/VR.jpg" alt="AR Drone System with Visual SLAM" />
           <div class="rect-info">
-            <h3>Drone System with 3D Simulation and XR Integration</h3>
-            <p>Developing an embedded quadcopter system with SLAM navigation in GPS-denied environments, linked to Unity XR simulations for real-time collision testing.</p>
+            <h3>Robotics Perception — Visual SLAM AR Drone System</h3>
+            <p class="meta">Research Assistant · UC Davis ·. Supervisor: Prof. Nelson Max Ph.D · Jul 2025 – Present</p>
+            <p>
+              Developing a multi-drone visual-inertial SLAM system using Intel RealSense T265
+              and NVIDIA Jetson for 6-DoF tracking, map persistence, and relocalization.
+            </p>
+            <p>
+              Rebuilt a legacy C++ pipeline using librealsense, and implemented a TCP/IP pose-streaming
+              pipeline into Unity for real-time AR visualization and multi-user environment mapping —
+              contributing to a SIGGRAPH 2026 submission.
+            </p>
           </div>
         </article>
 
         <article class="rect-card">
-          <img src="assets/bert.jpg" alt="NLP Environmental Governance" />
+          <img src="assets/bert.jpg" alt="NLP for Climate & Policy" />
           <div class="rect-info">
-            <h3>AI and NLP for Environmental Governance</h3>
-            <p>Built an NLP pipeline to extract and classify environmental discourse from government policy documents, leveraging transformer-based models for theme analysis.</p>
+            <h3>NLP for Climate & Environmental Governance</h3>
+            <p class="meta">Research Assistant · UC Davis · Supervisors: Prof. Carl Stahmer Ph.D.; Prof Akshita Sivakumar Ph.D.; Colton Baumler  · Mar 2025 – Present</p>
+            <p>
+              Built an R/Python NLP pipeline to process 500+ environmental-policy comments,
+              including PDF/OCR text extraction, cleaning, and preprocessing.
+            </p>
+            <p>
+              Fine-tuned transformer models (BERT/RoBERTa) for policy classification and delivered
+              interpretable results and documentation to a cross-disciplinary team of researchers
+              and non-technical stakeholders.
+            </p>
           </div>
         </article>
       </div>
       <div class="slider-dots"></div>
     </section>
 
-    <!-- PAST EXPERIENCE -->
+    <!-- WORK EXPERIENCE
     <section id="experience">
-      <h2>Past Experience</h2>
+      <h2>Work Experience</h2>
       <div class="slider auto-slider" data-dots="true">
         <article class="rect-card rect-card--text">
           <div class="rect-info">
-            <h3>“SpeakProse” QA & Data Analyst Intern — Cognixition Inc., San Leandro, CA</h3>
-            <p class="meta">Jun 2023 – Sep 2023</p>
+            <h3>Research Assistant — Robotics Perception (Visual SLAM AR Drone System)</h3>
+            <p class="meta">UC Davis · Jul 2025 – Present</p>
             <ul class="tight">
-              <li>Improved assistive speech app by finding edge-case bugs, refining test protocols, and suggesting UX/UI changes for accessibility and engagement.</li>
-              <li>Partnered with engineering to analyze interaction data; implemented changes that boosted reliability by ~18%.</li>
+              <li>Developing a multi-drone visual-inertial SLAM system with Intel RealSense T265 and Jetson-based compute.</li>
+              <li>Configured and compiled the librealsense C++ SDK on Ubuntu/Jetson, enabling robust 6-DoF tracking.</li>
+              <li>Implementing TCP/IP pose streaming into Unity for AR-style visualization and shared mapping between drones.</li>
             </ul>
           </div>
         </article>
 
         <article class="rect-card rect-card--text">
           <div class="rect-info">
-            <h3>Data Science Intern — PilotCity Inc., San Leandro, CA</h3>
-            <p class="meta">Jun 2022 – Sep 2022</p>
+            <h3>Research Assistant — NLP for Climate Policy</h3>
+            <p class="meta">UC Davis · Mar 2025 – Present</p>
             <ul class="tight">
-              <li>Supported an educational data-tracking app via exploratory analysis of student activity and survey data.</li>
-              <li>Performed QA across mobile platforms and collaborated on feature improvements informed by user testing.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="rect-card rect-card--text">
-          <div class="rect-info">
-            <h3>Student Assistant — Computer Architecture, UC Davis</h3>
-            <p class="meta">Jun 2025 – Present</p>
-            <ul class="tight">
-              <li>Tutored students and supported projects involving FSMs, datapaths, cache, and CPU implementation in Logisim.</li>
+              <li>Built an NLP pipeline (R/Python) for 500+ environmental policy comments, from PDF/OCR extraction to clean text.</li>
+              <li>Fine-tuned BERT/RoBERTa models for policy classification and evaluated model performance.</li>
+              <li>Maintained reproducible workflows in GitHub/Google Drive and communicated findings to non-technical collaborators.</li>
             </ul>
           </div>
         </article>
       </div>
       <div class="slider-dots"></div>
-    </section>
+    </section> -->
 
-
- <!-- SKILLS -->
+    <!-- SKILLS -->
     <section id="skills">
       <h2>Skills</h2>
       <div class="slider auto-slider" data-dots="true">
         <article class="rect-card">
           <div class="rect-info">
-            <h3><span class="skill-icon">💻</span> Programming Languages</h3>
-            <p>C, C++, Python, Java, JavaScript, R, Swift, Bash, Assembly (x86), SQL</p>
+            <h3>💻 Programming Languages</h3>
+            <p>C, C++, Python, R, Java</p>
           </div>
         </article>
 
         <article class="rect-card">
           <div class="rect-info">
-            <h3><span class="skill-icon">🌐</span> Systems & Networking</h3>
-            <p>BGP, TCP, UNIX, Serial Communication, GDB, Logisim</p>
+            <h3>🛰️ Robotics, Perception & SLAM</h3>
+            <p>
+              SLAM concepts, 6-DoF pose estimation, Intel RealSense T265, librealsense (C++ SDK),
+              NVIDIA Jetson (Ubuntu), streaming pose data to Unity for AR/VR-style visualization.
+            </p>
           </div>
         </article>
 
         <article class="rect-card">
           <div class="rect-info">
-            <h3><span class="skill-icon">🛰️</span> Embedded & Robotics</h3>
-            <p>MAVLink, Jetson Nano (NVIDIA), RealSense T265 (Intel), ROS, Pixhawk (ArduPilot)</p>
+            <h3>🧠 ML, LLMs & Vision</h3>
+            <p>
+              Machine learning, deep learning, supervised learning, computer vision, image classification,
+              image preprocessing, transformer models (BERT/RoBERTa), large language models (LLMs),
+              scikit-learn, cross-validation, model evaluation, HCI.
+            </p>
           </div>
         </article>
 
         <article class="rect-card">
           <div class="rect-info">
-            <h3><span class="skill-icon">🧠</span> ML & AI</h3>
-            <p>PyTorch, TensorFlow, Scikit-learn, Transformers, Cross-Validation, Model Deployment (Flask)</p>
+            <h3>🌐 Systems & Networking</h3>
+            <p>TCP/IP networking concepts and distributed sensing/coordination use cases.</p>
           </div>
         </article>
 
         <article class="rect-card">
           <div class="rect-info">
-            <h3><span class="skill-icon">📊</span> Data Science & NLP</h3>
-            <p>Text Preprocessing, PDF Extraction (R), NLP Classification, Statistics, Pandas, NumPy, Matplotlib</p>
-          </div>
-        </article>
-
-        <article class="rect-card">
-          <div class="rect-info">
-            <h3><span class="skill-icon">🛠️</span> Tools & Platforms</h3>
-            <p>GitHub, Google Colab, Unity XR, Unity 3D, Xcode, Figma, VSCode, HTML, CSS</p>
+            <h3>🛠️ Tools & Platforms</h3>
+            <p>
+              Git/GitHub, Linux/Ubuntu (command line), SSH, CMake, Jupyter, RStudio,
+              Logisim, Flask, LaTeX.
+            </p>
           </div>
         </article>
       </div>
       <div class="slider-dots"></div>
     </section>
 
-  
-  
     <!-- PROJECTS -->
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Academic Projects (Selection)</h2>
       <div class="rect-slider auto-slider" data-dots="true">
         <article class="rect-card">
-          <img src="assets/ecs132_pic.jpg" alt="Covert Timing Channel Simulation" />
-
+          <img src="assets/ecs132_pic.jpg" alt="Recyclable Waste Image Classification" />
           <div class="rect-info">
-            <h3>Secure Communications via Covert Timing Channel Simulation</h3>
-            <p class="meta">Programmer · Winter 2025</p>
-            <p>Simulated packet transmission and buffer dynamics in Python to analyze covert data leakage rates under varying network loads.</p>
-          </div>
-        </article>
-
-        <article class="rect-card">
-          <div class="rect-info">
-            <h3>Register-Level CPU Simulation and Cache Design</h3>
-            <p class="meta">Programmer · Spring 2025</p>
-            <p>Designed and tested a custom CPU and cache system in Logisim, optimizing circuits to reduce execution cycles for arithmetic operations.</p>
+            <h3>Recyclable Waste Image Classification using Computer Vision & XAI</h3>
+            <p class="meta">In Progress · Fall 2025</p>
+            <p>
+              Building a machine learning and computer vision pipeline in Python using a Kaggle waste
+              classification dataset to perform binary image classification (recyclable vs non-recyclable).
+            </p>
+            <p>
+              Comparing logistic regression and CNN architectures, applying image processing
+              (e.g., Gaussian blur, edge detection), and exploring explainable AI techniques
+              to visualize decision regions.
+            </p>
           </div>
         </article>
 
         <article class="rect-card">
           <img src="assets/ML_pic.jpg" alt="Student Success Prediction Webapp Screenshot" />
           <div class="rect-info">
-            <h3>Student Success Prediction Webapp</h3>
-            <p class="meta">ML Programmer/Designer · Spring 2025</p>
-            <p>A predictive web application that analyzes lifestyle patterns to forecast student performance. Integrated interactive UI, multiple ML models, and real-time results visualization.</p>
+            <h3>Student Success Prediction ML & Webapp</h3>
+            <p class="meta">Spring 2025</p>
+            <p>
+              Built a Flask-based web application integrating neural networks, random forests,
+              and regression models using student lifestyle features (study hours, sleep, diet, etc.)
+              to predict academic performance.
+            </p>
+            <p>
+              Followed the full software development lifecycle from design and implementation
+              through testing and deployment, training models on 200+ student profiles with
+              K-fold cross-validation.
+            </p>
+          </div>
+        </article>
+
+        <article class="rect-card">
+          <div class="rect-info">
+            <h3>Register-Level CPU Simulation & Cache Design</h3>
+            <p class="meta">Spring 2025</p>
+            <p>
+              Designed and tested a custom CPU and cache system in Logisim using multiplexers,
+              ALUs, decoders, and memory components.
+            </p>
+            <p>
+              Optimized the datapath to reduce execution cycles for basic arithmetic operations
+              through targeted circuit improvements.
+            </p>
+          </div>
+        </article>
+
+        <article class="rect-card">
+          <div class="rect-info">
+            <h3>Secure Communications via Covert Timing Channel Simulation</h3>
+            <p class="meta">Winter 2025</p>
+            <p>
+              Simulated packet transmission and buffer overflow/underflow dynamics in Python
+              to study covert timing channels.
+            </p>
+            <p>
+              Conducted 100+ test cases to analyze system performance and data leakage rates
+              under varying network loads.
+            </p>
           </div>
         </article>
       </div>
       <div class="slider-dots"></div>
     </section>
-
 
     <!-- CLASSES -->
     <section id="classes">
@@ -226,60 +315,47 @@
       <div class="slider auto-slider classes-slider" data-dots="true">
         <article class="rect-card rect-card--text classes-card">
           <div class="rect-info">
-            <h3>Algorithms & DS</h3>
-            <p>Data Structures, Design & Algorithms, Theory of Computation.</p>
+            <h3>Algorithms & Theory</h3>
+            <p>Data Structures, Design & Analysis of Algorithms, Theory of Computation.</p>
           </div>
         </article>
 
         <article class="rect-card rect-card--text classes-card">
           <div class="rect-info">
-            <h3>ML & Probability</h3>
-            <p>Machine Learning (ML), Probability & Statistics.</p>
+            <h3>Machine Learning & Probability</h3>
+            <p>Machine Learning, Computer Vision, HCI, Probability & Statistics.</p>
           </div>
         </article>
 
         <article class="rect-card rect-card--text classes-card">
           <div class="rect-info">
             <h3>Systems & Architecture</h3>
-            <p>Computer Architecture, Operating Systems.</p>
+            <p>Computer Architecture, Operating Systems, Computer Networks.</p>
           </div>
         </article>
 
         <article class="rect-card rect-card--text classes-card">
           <div class="rect-info">
             <h3>Mathematics</h3>
-            <p>Discrete Math, Calculus I–III, Linear Algebra.</p>
+            <p>Discrete Mathematics, Calculus I–III, Linear Algebra.</p>
           </div>
         </article>
       </div>
       <div class="slider-dots"></div>
-
     </section>
 
-   
-
-    <!-- LEADERSHIP & ACTIVITIES -->
+    <!-- LEADERSHIP & TEACHING -->
     <section id="leadership">
-      <h2>Leadership & Activities</h2>
+      <h2>Leadership & Teaching</h2>
       <div class="slider auto-slider" data-dots="true">
-        <article class="rect-card rect-card--text">
-          <div class="rect-info">
-            <h3>Swift iOS Coding Club</h3>
-            <p class="meta">VP of Marketing / Tech Director / Treasurer · May 2025 – Present</p>
-            <ul class="tight">
-              <li>Mentored members in Xcode</li>
-              <li>Built onboarding guides, boosting online engagement.</li>
-            </ul>
-          </div>
-        </article>
-
         <article class="rect-card rect-card--text">
           <div class="rect-info">
             <h3>Machine Learning Student Network Club</h3>
             <p class="meta">Marketing Director · May 2025 – Present</p>
             <ul class="tight">
-              <li>Designed and maintained digital assets for ML workshops.</li>
-              <li>Launched outreach that reached 1,000+ students and increased attendance</li>
+              <li>Designed and executed digital marketing campaigns for ML workshops.</li>
+              <li>Reached 1,000+ students and tripled applicant count within one quarter.</li>
+              <li>Grew club content engagement to 83.4k as of Oct 2025.</li>
             </ul>
           </div>
         </article>
@@ -289,7 +365,8 @@
             <h3>Student Assistant — Computer Architecture, UC Davis</h3>
             <p class="meta">Jun 2025 – Present</p>
             <ul class="tight">
-              <li>Tutored peers and supported architecture labs (FSMs, datapaths, cache & CPU in Logisim).</li>
+              <li>Tutor for coursework involving FSMs, datapaths, cache, and CPU design in Logisim.</li>
+              <li>Helped students understand how instructions flow through hardware using clear written and verbal explanations.</li>
             </ul>
           </div>
         </article>
@@ -297,48 +374,74 @@
       <div class="slider-dots"></div>
     </section>
 
-    
-    <section id="resume">
-      <h2>Resume</h2>
+    <!-- HONORS & CERTIFICATIONS -->
+    <section id="honors">
+      <h2>Honors & Certifications</h2>
+      <div class="rect-slider">
+        <article class="rect-card rect-card--text">
+          <div class="rect-info">
+            <h3>Honors & Awards</h3>
+            <ul class="tight">
+              <li>Dean’s Honor List, College of Engineering, UC Davis — Spring 2024, Fall 2024, Winter 2025.</li>
+              <li>Ranked in the top 16% of students in the College of Engineering based on term GPA.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rect-card rect-card--text">
+          <div class="rect-info">
+            <h3>Certifications</h3>
+            <p class="meta">IBM Z Xplore Concept Badge · Oct 2025</p>
+            <p>
+              Covered mainframe architecture, Linux on Z, z/OS, and fundamentals of cloud and DevOps
+              on IBM Z platforms.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="2026 CV">
+      <h2>CV</h2>
       <div class="card">
-        <p> <a href="assets/resume.pdf" target="_blank">
-    View Résumé (PDF)
-  </a></p>
+        <p>
+          <a href="assets/ShifanaazFazalur_2026_CV.pdf" target="_blank" rel="noopener">
+            View 2026 Curriculum Vitae (CV) (.pdf)
+          </a>
+        </p>
       </div>
     </section>
   
   </main>
 
-  
   <!-- Footer (Contact) -->
-<footer class="site-footer" id="contact" aria-labelledby="contact-heading">
-  <div class="footer-inner">
-    <h2 id="contact-heading" class="footer-title">Contact</h2>
+  <footer class="site-footer" id="contact" aria-labelledby="contact-heading">
+    <div class="footer-inner">
+      <h2 id="contact-heading" class="footer-title">Contact</h2>
 
-    <nav class="footer-links" aria-label="Contact links">
-      <a class="f-link" href="mailto:sfazalur@ucdavis.edu">
-        <img src="assets/icons/email.png" alt="" class="f-icon"> sfazalur@ucdavis.edu
-      </a>
-      <a class="f-link" href="https://www.linkedin.com/in/shifanaaz-fazalur/" target="_blank" rel="noopener">
-        <img src="assets/icons/linkedin.svg" alt="" class="f-icon"> LinkedIn
-      </a>
-      <a class="f-link" href="https://github.com/ShifanaazFazalur" target="_blank" rel="noopener">
-        <img src="assets/icons/github.png" alt="" class="f-icon"> GitHub
-      </a>
-      <a class="f-link" href="https://leetcode.com/u/sfazalur/" target="_blank" rel="noopener">
-        <img src="assets/icons/leetcode.png" alt="" class="f-icon"> LeetCode
-      </a>
-    </nav>
+      <nav class="footer-links" aria-label="Contact links">
+        <a class="f-link" href="mailto:sfazalur@ucdavis.edu">
+          <img src="assets/icons/email.png" alt="" class="f-icon"> sfazalur@ucdavis.edu
+        </a>
+        <a class="f-link" href="https://www.linkedin.com/in/shifanaaz-fazalur/" target="_blank" rel="noopener">
+          <img src="assets/icons/linkedin.svg" alt="" class="f-icon"> LinkedIn
+        </a>
+        <a class="f-link" href="https://github.com/ShifanaazFazalur" target="_blank" rel="noopener">
+          <img src="assets/icons/github.png" alt="" class="f-icon"> GitHub
+        </a>
+        <a class="f-link" href="https://leetcode.com/u/sfazalur/" target="_blank" rel="noopener">
+          <img src="assets/icons/leetcode.png" alt="" class="f-icon"> LeetCode
+        </a>
+      </nav>
 
-    <p class="footer-copy">© <span id="year"></span> Shifa </p>
-  </div>
-</footer>
+      <p class="footer-copy">© <span id="year"></span> Shifa</p>
+    </div>
+  </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
   <!-- JS -->
   <script src="script.js"></script>
